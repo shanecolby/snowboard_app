@@ -1,0 +1,8 @@
+{
+  id: @snowboard.id,
+  brand: @snowboard.brand,
+  price: @snowboard.price,
+  shape: @snowboard.shape,
+  description: @snowboard.description
+
+}
