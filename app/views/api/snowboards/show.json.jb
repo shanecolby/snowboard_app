@@ -1,10 +1,12 @@
-{
-  id: @snowboard.id,
-  brand: @snowboard.brand,
-  price: @snowboard.price,
-  shape: @snowboard.shape,
-  description: @snowboard.description,
-  tax: @snowboard.tax,
-  total: @snowboard.total
+# {
+#   id: @snowboard.id,
+#   brand: @snowboard.brand,
+#   price: @snowboard.price,
+#   shape: @snowboard.shape,
+#   description: @snowboard.description,
+#   tax: @snowboard.tax,
+#   total: @snowboard.total
 
-}
+# }
+
+render partial: "snowboard.json.jb", locals: {snowboard: @snowboard}

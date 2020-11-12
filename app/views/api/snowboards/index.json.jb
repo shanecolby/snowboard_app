@@ -1,10 +1,11 @@
 @snowboards.map do |snowboard|
-{
-  id: snowboard.id,
-  brand: snowboard.brand,
-  price: snowboard.price,
-  shape: snowboard.shape,
-  description: snowboard.description
+# {
+#   id: snowboard.id,
+#   brand: snowboard.brand,
+#   price: snowboard.price,
+#   shape: snowboard.shape,
+#   description: snowboard.description
   
-}
+# }
+render partial: "snowboard.json.jb", locals: {snowboard: snowboard}
 end
