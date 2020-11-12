@@ -1,0 +1,10 @@
+{
+  id: @snowboard.id,
+  brand: @snowboard.brand,
+  price: number_to_currency(@snowboard.price),
+  shape: @snowboard.shape,
+  description: @snowboard.description,
+  tax: number_to_currency(@snowboard.tax),
+  total: number_to_currency(@snowboard.total)
+
+}

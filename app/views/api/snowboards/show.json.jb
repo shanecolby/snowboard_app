@@ -3,6 +3,8 @@
   brand: @snowboard.brand,
   price: @snowboard.price,
   shape: @snowboard.shape,
-  description: @snowboard.description
+  description: @snowboard.description,
+  tax: @snowboard.tax,
+  total: @snowboard.total
 
 }
