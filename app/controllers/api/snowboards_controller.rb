@@ -18,4 +18,22 @@ class Api::SnowboardsController < ApplicationController
       @snowboard.save
     render "show.json.jb"
   end
+
+  def update
+    @snowboard = Snowboard.find_by(id: params[:id])
+
+    @snowboard.brand = params[:brand]
+    @snowboard.price = params[:price]
+    @snowboard.shape = params[:shape]
+    @snowboard.description = params[:description]
+    @snowboard.save
+
+    render "show.json.jb"
+  end
+
+  def destroy
+    @snowboard = Snowboard.find_by(id: params[:id])
+    @snowboard.destroy
+    render json: {message: "snowboard removed"}
+  end
 end

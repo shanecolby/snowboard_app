@@ -7,6 +7,8 @@ Rails.application.routes.draw do
     get "/snowboards" => "snowboards#index"
     get "/snowboards/:id" => "snowboards#show"
     post "/snowboards" => "snowboards#create"
+    patch "/snowboards/:id" => "snowboards#update"
+    delete "/snowboards/:id" => "snowboards#destroy"
 
   end
 end
